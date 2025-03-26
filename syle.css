@@ -1,0 +1,157 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Set Background Image */
+body {
+    background: url('image/p1.jpg') no-repeat center center/cover;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #2c3e50;
+    color: #fff;
+}
+
+.navbar h1 {
+    font-size: 1.8em;
+}
+
+.navbar .auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar button {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar button:hover {
+    background: #fff;
+    color: #2c3e50;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    color: #e4e4e4;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Layout for Side Images and Content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+/* Side Images */
+.side-images img {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Section */
+.content {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    transform: translateY(50px);
+}
+
+.content h2 {
+    font-size: 2.2em;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.content p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.stat {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    color: #fff;
+}
+
+.stat:hover {
+    transform: translateY(-5px);
+}
+
+.stat h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.stat p {
+    font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .side-images {
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+    }
+
+    .side-images img {
+        width: 740px;
+    }
+}
